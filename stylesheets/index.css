@@ -1,14 +1,17 @@
 body{
     background-image: url("../images/background.jpg");
     background-color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+img { display: inline-block; height:100%; width: 100%;}
 
 #title{
     color: rgb(15, 44, 230);
     text-align: center;
     margin-top: 35px;
     margin-bottom: 35px;
+    font-size: 48px;
 }
 
 div{
@@ -21,7 +24,7 @@ div{
     padding: 30px 250px 0px 400px;
 }
 
-.links-to-pages{
+/* .links-to-pages{
     float: left;
     margin: 1%;
     width: 30%;
@@ -30,7 +33,27 @@ div{
     text-align: center;
     border: 5px groove silver;
     padding: 50px 50px 50px 50px;
+} */
+
+.links-to-pages {
+    float: left;
+    margin: 1%;
+    width: 45%; /* Adjust the width as needed */
+    height:225px;
+    background: white;
+    color: black; /* Change the text color as needed */
+    text-align: center;
+    border: 5px groove silver;
+    padding: 50px 50px 50px 50px;
+    box-sizing: border-box; /* Include padding within the width */
 }
+
+@media (max-width: 768px) {
+    .links-to-pages {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
 
 #canada-button{
     background-image: url("../images/canada_flag.png");
@@ -46,6 +69,11 @@ div{
     color: black;
     background-image: url("../images/brunei_flag.png");
     background: yellow;
+}
+
+#brunei-button:hover{
+    color: blue;
+    transform: scale(1.1);
 }
 
 #cuba-button{

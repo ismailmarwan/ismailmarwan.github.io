@@ -1,0 +1,92 @@
+body{
+    background-color: blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#title{
+    color: rgb(15, 44, 230);
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 48px;
+}
+
+.flag{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px; /* Adjust the desired width */
+    height: auto; /* Automatically adjust height */
+}
+
+.country-description{
+    background-color: lightskyblue;
+    padding: 10px 5px 5px 10px;
+    font-size: 18px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: gold;
+}
+
+.beach-list{
+    background-color: lightskyblue;
+    padding: 10px 5px 5px 30px;
+    font-size: 18px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: gold;
+}
+
+.beach-link{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.beach-link:visited{
+    color: black;
+    font-size: 18px;
+}
+
+.slideshow {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .prev-button,
+  .next-button {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    margin-right: 10px;
+  }
+  
+  .next-button {
+    margin-left: 10px;
+  }
+  
